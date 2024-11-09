@@ -1,0 +1,6 @@
+multimodule-code-coverage/module1/modeul1-b/target/classes/com/example/Main.class
+multimodule-code-coverage/module1/module1-c/target/classes/com/example/Main.class
+multimodule-code-coverage/module1/target/classes/com/example/Main.class
+multimodule-code-coverage/module2/target/classes/com/example/Main.class
+multimodule-code-coverage/module3/target/classes/com/example/Main.class
+multimodule-code-coverage/target/classes/com/example/Main.class
