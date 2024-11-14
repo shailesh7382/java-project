@@ -89,3 +89,40 @@ multimodule-code-coverage/
 
 # Paths to JaCoCo reports using wildcard pattern
 sonar.coverage.jacoco.xmlReportPaths=**/target/site/jacoco/jacoco.xml
+
+
++-------------------+       +-------------------+       +-------------------+
+|    Main (main)    |<------|  Module1 (module1)|<------|  Module2 (module2)|
+|-------------------|       |-------------------|       |-------------------|
+| - mainMethod()    |       | - module1Method() |       | - module2Method() |
++-------------------+       +-------------------+       +-------------------+
+^                           ^                           ^
+|                           |                           |
+|                           |                           |
+|                           |                           |
++-------------------+       +-------------------+       +-------------------+
+|Module3 (module3)  |       |Module1A (module1-a)|       |Module1B (module1-b)|
+|-------------------|       |-------------------|       |-------------------|
+| - module3Method() |       | - module1AMethod()|       | - module1BMethod()|
++-------------------+       +-------------------+       +-------------------+
+
+
+
+
+
+[INFO] --- jar:3.4.1:jar (default-jar) @ testaggregator ---
+[INFO] Building jar: /Users/shailesh/codebase/java-project/multimodule-code-coverage/testaggregator/target/testaggregator-1.0-SNAPSHOT.jar
+[INFO]
+[INFO] --- jacoco:0.8.8:report-aggregate (report-aggregate) @ testaggregator ---
+[INFO] Loading execution data file /Users/shailesh/codebase/java-project/multimodule-code-coverage/module1/modeul1-b/target/jacoco.exec
+[INFO] Loading execution data file /Users/shailesh/codebase/java-project/multimodule-code-coverage/module1/module1-c/target/jacoco.exec
+[INFO] Loading execution data file /Users/shailesh/codebase/java-project/multimodule-code-coverage/module1/module1-a/target/jacoco.exec
+[INFO] Loading execution data file /Users/shailesh/codebase/java-project/multimodule-code-coverage/module3/target/jacoco.exec
+[INFO] Loading execution data file /Users/shailesh/codebase/java-project/multimodule-code-coverage/module2/target/jacoco.exec
+[INFO] Loading execution data file /Users/shailesh/codebase/java-project/multimodule-code-coverage/main/target/jacoco.exec
+[INFO] Analyzed bundle 'modeul1-b' with 1 classes
+[INFO] Analyzed bundle 'module1-c' with 1 classes
+[INFO] Analyzed bundle 'module1-a' with 1 classes
+[INFO] Analyzed bundle 'module3' with 1 classes
+[INFO] Analyzed bundle 'module2' with 1 classes
+[INFO] Analyzed bundle 'main' with 1 classes
