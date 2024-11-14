@@ -37,3 +37,51 @@ You should not get a major-minor version exception if you follow the setup corre
 project built with JDK 11 can run on JRE 21. Java maintains backward compatibility, so code compiled with an older version of the JDK (like JDK 11) should run without issues on a newer JRE (like JRE 21).
 
 it is advisable to first run your existing builds (compiled with JDK 11) on JRE 21 to ensure compatibility and identify any potential issues. This step helps verify that your application runs correctly on the newer runtime environment before making any changes to the build process itself.
+
+multimodule-code-coverage/
+├── pom.xml
+├── module1/
+│   ├── pom.xml
+│   ├── src/
+│   │   ├── main/
+│   │   │   └── java/
+│   │   │       └── com/
+│   │   │           └── example/
+│   │   │               └── module1/
+│   │   │                   └── Main.java
+│   │   └── test/
+│   │       └── java/
+│   │           └── com/
+│   │               └── example/
+│   │                   └── module1/
+│   │                       └── MainTest.java
+├── module2/
+│   ├── pom.xml
+│   ├── src/
+│   │   ├── main/
+│   │   │   └── java/
+│   │   │       └── com/
+│   │   │           └── example/
+│   │   │               └── module2/
+│   │   │                   └── Main.java
+│   │   └── test/
+│   │       └── java/
+│   │           └── com/
+│   │               └── example/
+│   │                   └── module2/
+│   │                       └── MainTest.java
+├── module3/
+│   ├── pom.xml
+│   ├── src/
+│   │   ├── main/
+│   │   │   └── java/
+│   │   │       └── com/
+│   │   │           └── example/
+│   │   │               └── module3/
+│   │   │                   └── Main.java
+│   │   └── test/
+│   │       └── java/
+│   │           └── com/
+│   │               └── example/
+│   │                   └── module3/
+│   │                       └── MainTest.java
