@@ -16,6 +16,7 @@
     <modules>
         <module>modeul1-b</module>
         <module>module1-c</module>
+        <module>module1-a</module>
     </modules>
 
     <properties>

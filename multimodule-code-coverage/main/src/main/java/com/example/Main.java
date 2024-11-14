@@ -6,6 +6,7 @@ public class Main {
     }
 
     public void methodModulemain() {
+        Module1B.main(null);
         System.out.println("methodModulemain");
     }
     public void methodModulemain_2() {

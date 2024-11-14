@@ -11,6 +11,8 @@ public class Module1 {
 
     public void methodModule1() {
         System.out.println("Hello world!");
+//        Module1C module1C = new Module1C();
+        Module1C.main(null);
     }
     public void methodModule1_2() {
         System.out.println("Hello world!");

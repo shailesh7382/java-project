@@ -85,3 +85,7 @@ multimodule-code-coverage/
 │   │               └── example/
 │   │                   └── module3/
 │   │                       └── MainTest.java
+
+
+# Paths to JaCoCo reports using wildcard pattern
+sonar.coverage.jacoco.xmlReportPaths=**/target/site/jacoco/jacoco.xml
